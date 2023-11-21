@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt_BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário Básico</title>
+
+    <!-- CSS: -->
+    <link rel="stylesheet" href="./css/style.css">
+
+    <!-- Font styles: -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Contents: -->
+    <section>
+        <form class="formulario">
+            <h1 class="titulo">Formulário</h1>
+            
+            <div class="campo-preenchimento">
+                <label for="inNome">Nome:</label> <br>
+                <input type="text" id="inNome" placeholder="ex.: João Silva" name="" id="">
+            </div>
+
+            <div class="campo-preenchimento">
+                <label for="inEmail">Email:</label> <br>
+                <input type="text" id="inEmail" placeholder="ex.: seuEmail@aqui.com" name="" id="">
+            </div>
+            
+            <div class="campo-preenchimento">
+                <label for="inSenha">Senha:</label> <br>
+                <input type="password" id="inSenha" placeholder="Digite a sua senha" name="" id="">
+            </div>
+
+            <div class="campo-marcacao">
+                <input type="checkbox" name="inViewPassword" id="inViewPassword">
+                <label for="btnViewPassword">Mostrar senha</label>
+            </div>
+
+            <button type="submit" class="botao" id="btnSubmit">
+                Enviar
+            </button>
+        </form>
+    </section>
+
+    <!-- JavaScript: -->
+    <script src="./js/script.js"></script>
+</body>
+</html>

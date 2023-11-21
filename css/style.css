@@ -1,0 +1,78 @@
+:root {
+    --grassy-green: #a8d895;
+    --light-grassy-green: #e8f5e3;
+    --dark-grassy-green: #87b177;
+    --purple-cream: #f3eef3;
+    --biscuit: #cecece;
+    --dark-biscuit: #50505080;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    background-image: linear-gradient(180deg, var(--grassy-green), var(--dark-grassy-green));
+    font-family: 'Roboto', sans-serif;
+    height: 100vh;
+    justify-content: space-around;
+}
+section {
+    margin: 0 auto;
+    padding: 25px;
+    width: 350px;
+    max-height: 350px;
+    border-radius: 35px;
+    background-color: var(--purple-cream);
+    box-shadow: 5px 5px 15px var(--dark-biscuit);
+}
+
+.formulario {
+    margin: 0 auto;
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 350px;
+}
+.titulo {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 32px;
+    text-align: center;
+}
+.campo-preenchimento label {
+    font-size: 20px;
+}
+.campo-preenchimento input {
+    margin-top: 5px;
+    width: 250px;
+    height: 25px;
+}
+.campo-preenchimento:hover input {
+    box-shadow: 5px 5px 15px var(--biscuit);
+}
+
+.campo-marcacao {
+    margin-top: 10px;
+}
+
+.botao {
+    cursor: pointer;
+    margin: 0 auto;
+    margin-top: 10px;
+    width: 175px;
+    height: 35px;
+    border: 1px solid var(--grassy-green);
+    border-radius: 35px;
+    background-color: var(--purple-cream);
+    color: var(--grassy-green);
+    font-size: 16px;
+}
+.botao:hover {
+    background-image: linear-gradient(180deg, var(--purple-cream), var(--light-grassy-green));
+    box-shadow: 5px 5px 15px var(--biscuit);
+}
+.botao:active {
+    color: var(--dark-grassy-green);
+    border-color: var(--dark-grassy-green);
+    background-color: var(--light-grassy-green);
+}
